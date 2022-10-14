@@ -11,25 +11,29 @@ console.log(userWord);
 //se sono uguali sono plaindrome altrimenti no
 
 function reverseWords(str) {
-    // let reverseWordArr = str.split(" ");
-    // reverseWordArr.reverse();
-    // reverseWordArr = reverseWordArr.join(" ");
-    // console.log(reverseWordArr);
-    return str.split(" ").reverse().join("")
+    let reversed;
+   for (let i = str.lenght - 1 ; i >= 0; i--) {
+       
+        
+   }
+   return reversed
+    //return str.split("").reverse().join("");
 
 }
+
 const reversedWord = reverseWords(userWord);
 console.log(reversedWord);
 
-function palindromeCheck(wordToCheck) {
-    
-    
 
+
+function palindromeCheck(wordToCheck) {
     if (wordToCheck === reversedWord) {
         //console.log("la parola è palindroma");
-        return true
+        return true;
     }
-    return false
+    
+    return false;
+    
 }
 
 const boolean = palindromeCheck(userWord);
