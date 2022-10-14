@@ -17,8 +17,17 @@ function reverseWords(str) {
 const reversedWord = reverseWords(userWord);
 console.log(reversedWord);
 
-function plaindromeCheck() {
-    
-   
+function palindromeCheck(wordToCheck) {
+    if (wordToCheck === reversedWord) {
+        console.log("la parola è palindroma");
+        return true
+    }
+    return false
 }
+
+palindromeCheck(userWord);
+
+
+
+   
 
