@@ -9,18 +9,19 @@ console.log(userWord);
 //prendo la parola e uso .reverseString
 //comparo la parola del prompt con quella nel .reverseString
 //se sono uguali sono plaindrome altrimenti no
+
 function reverseWords(str) {
     let reverseWordArr = str.split(" ").reverse().join("");
     console.log(reverseWordArr);
     return reverseWordArr;
 
 }
-
-
+const reversedWord = reverseWords(userWord);
+console.log(reversedWord);
 
 function palindromeCheck(wordToCheck) {
-    let reversedWord = reverseWords(userWord);
-    console.log(reversedWord);
+    
+    
 
     if (wordToCheck === reversedWord) {
         //console.log("la parola è palindroma");
@@ -32,7 +33,7 @@ function palindromeCheck(wordToCheck) {
 const boolean = palindromeCheck(userWord);
 console.log(boolean);
 
-if (palindromeCheck()) {
+if (boolean) {
     console.log("la parola è palindroma");
 }else{
     console.log("la parola non è palindroma");
