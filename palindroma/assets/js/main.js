@@ -11,11 +11,11 @@ console.log(userWord);
 //se sono uguali sono plaindrome altrimenti no
 
 function reverseWords(str) {
-    let reverseWordArr = str.split(" ");
-    reverseWordArr.reverse();
-    reverseWordArr = reverseWordArr.join(" ");
-    console.log(reverseWordArr);
-    return reverseWordArr;
+    // let reverseWordArr = str.split(" ");
+    // reverseWordArr.reverse();
+    // reverseWordArr = reverseWordArr.join(" ");
+    // console.log(reverseWordArr);
+    return str.split(" ").reverse().join("")
 
 }
 const reversedWord = reverseWords(userWord);
