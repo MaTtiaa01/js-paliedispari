@@ -27,9 +27,10 @@ function palindromeCheck(wordToCheck) {
     return false
 }
 
-palindromeCheck(userWord);
+const boolean = palindromeCheck(userWord);
+console.log(boolean);
 
-if (palindromeCheck) {
+if (palindromeCheck()) {
     console.log("la parola è palindroma");
 }else{
     console.log("la parola non è palindroma");
