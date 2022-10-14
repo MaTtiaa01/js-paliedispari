@@ -16,10 +16,12 @@ function reverseWords(str) {
 
 }
 
-const reversedWord = reverseWords(userWord);
-console.log(reversedWord);
+
 
 function palindromeCheck(wordToCheck) {
+    let reversedWord = reverseWords(userWord);
+    console.log(reversedWord);
+
     if (wordToCheck === reversedWord) {
         //console.log("la parola è palindroma");
         return true
