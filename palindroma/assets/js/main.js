@@ -10,9 +10,9 @@ console.log(userWord);
 //comparo la parola del prompt con quella nel .reverseString
 //se sono uguali sono plaindrome altrimenti no
 function reverseWords(str) {
-    let reverseWordArr = str.split(" ").map(word => word.split("").reverse().join(""));
+    let reverseWordArr = str.split(" ").reverse().join("");
     console.log(reverseWordArr);
-    return reverseWordArr.join(" ");
+    return reverseWordArr;
 
 }
 
